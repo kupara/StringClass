@@ -1,7 +1,4 @@
-# StringClass
-Checkpoint II
-
-# JavaScript String Class Extension using prototypes
+# CheckPoint II String Class Extension using Prototypes and Regular Expressions
 
 This implementation extends the functionality of the `String` class by adding more utility methods.
 
