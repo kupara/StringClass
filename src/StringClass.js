@@ -6,21 +6,19 @@
   };
 
   String.prototype.toUpper = function() {
-    return this.replace(/[a-z]/g, function(str) {
-      // from str to ascii
+    return this.replace(/[a-z]/g, (str) => {
       return String.fromCharCode(str.charCodeAt() - 32);
     });
   };
 
   String.prototype.toLower = function() {
-    return this.replace(/[A-Z]/g, function(str) {
-      // from str to ascii
+    return this.replace(/[A-Z]/g, (str) => {
       return String.fromCharCode(str.charCodeAt() + 32);
     });
   };
 
   String.prototype.ucFirst = function() {
-    return this.replace(/[a-z]/, function(str) {
+    return this.replace(/[a-z]/, (str) => {
       return str.toUpper();
     });
   };
