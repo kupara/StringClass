@@ -28,7 +28,7 @@
   };
 
   String.prototype.words = function() {
-    return this.split(/\W/g);
+    return this.split(/[\W]+/g);
   };
 
   String.prototype.wordCount = function() {
@@ -36,8 +36,8 @@
   };
   
   String.prototype.toCurrency = function() {
-    var re = /(\d)(?=(\d{3})+(?!\d))/g;
-    return Number(this.replace(/[^0-9\.]/g, '')).toFixed(2).replace(re, '$1,');
+    var currencyExpression = /(\d)(?=(\d{3})+(?!\d))/g;
+    return Number(this.replace(/[^0-9\.]/g, '')).toFixed(2).replace(currencyExpression, '$1,');
   };
 
   String.prototype.fromCurrency = function() {
