@@ -11,8 +11,8 @@ describe('Tests for StringClass Checkpoint', function() {
 
   describe('The function String.prototype.hasVowels()', function() {  
     it('should be a function and prototype of the String class', function() {
-       expect(String.prototype.hasVowels).toBeDefined();
-       expect(typeof String.prototype.hasVowels).toBe('function');
+      expect(String.prototype.hasVowels).toBeDefined();
+      expect(typeof String.prototype.hasVowels).toBe('function');
     });
     
     // hasVowels() checks whether a string has vowels returning true 
@@ -21,13 +21,14 @@ describe('Tests for StringClass Checkpoint', function() {
       expect(typeof inLower.hasVowels()).toBe('boolean');
       expect(inLower.hasVowels()).toBeTruthy();
       expect(noVowels.hasVowels()).not.toBeTruthy();
+      expect('S@t!R3'.hasVowels()).toBeFalsy();
     });
   });
 
   describe('The function String.prototype.toUpper()', function() { 
     it('should be a function and prototype of the String class', function() {
-       expect(String.prototype.toUpper).toBeDefined();
-       expect(typeof String.prototype.toUpper).toBe('function');
+      expect(String.prototype.toUpper).toBeDefined();
+      expect(typeof String.prototype.toUpper).toBe('function');
     });
     
     // toUpper() returns the string with all letters in Uppercase 
@@ -43,8 +44,8 @@ describe('Tests for StringClass Checkpoint', function() {
 
   describe('The function String.prototype.toLower()', function() {
     it('should be a function and prototype of the String class', function() {
-       expect(String.prototype.toLower).toBeDefined();
-       expect(typeof String.prototype.toLower).toBe('function');
+      expect(String.prototype.toLower).toBeDefined();
+      expect(typeof String.prototype.toLower).toBe('function');
     });
     
     // toLower() returns the string with all letters in Lowercase 
@@ -60,8 +61,8 @@ describe('Tests for StringClass Checkpoint', function() {
   
   describe('The function String.prototype.ucFirst()', function() {
     it('should be a function and prototype of the String class', function() {
-       expect(String.prototype.ucFirst).toBeDefined();
-       expect(typeof String.prototype.ucFirst).toBe('function');
+      expect(String.prototype.ucFirst).toBeDefined();
+      expect(typeof String.prototype.ucFirst).toBe('function');
     });
     
     //ucFirst() returns a String with the first letter in Uppercase
@@ -75,8 +76,8 @@ describe('Tests for StringClass Checkpoint', function() {
   
   describe('The function String.prototype.isQuestion()', function() {
     it('should be a function and prototype of the String class', function() {
-       expect(String.prototype.isQuestion).toBeDefined();
-       expect(typeof String.prototype.isQuestion).toBe('function');
+      expect(String.prototype.isQuestion).toBeDefined();
+      expect(typeof String.prototype.isQuestion).toBe('function');
     });
     
     // returns true if the string it's called on is a question and
@@ -91,8 +92,8 @@ describe('Tests for StringClass Checkpoint', function() {
   
   describe('The function String.prototype.words()', function() {
     it('should be a function and prototype of the String class', function() {
-       expect(String.prototype.words).toBeDefined();
-       expect(typeof String.prototype.words).toBe('function');
+      expect(String.prototype.words).toBeDefined();
+      expect(typeof String.prototype.words).toBe('function');
     });
     
     // returns a list of the words in the string, as an Array
@@ -109,8 +110,8 @@ describe('Tests for StringClass Checkpoint', function() {
 
   describe('The function String.prototype.wordCount()', function() {
     it('should be a function and prototype of the String class', function() {
-       expect(String.prototype.wordCount).toBeDefined();
-       expect(typeof String.prototype.wordCount).toBe('function');
+      expect(String.prototype.wordCount).toBeDefined();
+      expect(typeof String.prototype.wordCount).toBe('function');
     });
     
     // Returns the number of words in the string using words()
@@ -131,8 +132,8 @@ describe('Tests for StringClass Checkpoint', function() {
 
   describe('The function String.prototype.toCurrency()', function() {
     it('should be a function and prototype of the String class', function() {
-       expect(String.prototype.toCurrency).toBeDefined();
-       expect(typeof String.prototype.toCurrency).toBe('function');
+      expect(String.prototype.toCurrency).toBeDefined();
+      expect(typeof String.prototype.toCurrency).toBe('function');
     });
 
     // Returns a currency representation of the String
@@ -146,8 +147,8 @@ describe('Tests for StringClass Checkpoint', function() {
 
   describe('The function String.prototype.fromCurrency()', function() {
     it('should be a function and prototype of the String class', function() {
-       expect(String.prototype.fromCurrency).toBeDefined();
-       expect(typeof String.prototype.fromCurrency).toBe('function');
+      expect(String.prototype.fromCurrency).toBeDefined();
+      expect(typeof String.prototype.fromCurrency).toBe('function');
     });
 
     // Returns a number representation of the Currency String

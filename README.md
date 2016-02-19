@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # CheckPoint II String Class Extension using Prototypes and Regular Expressions
 
 This implementation extends the functionality of the `String` class by adding more utility methods.
@@ -101,4 +102,8 @@ This library consist of nine custom methods:
         var currency = "12,345,678.12";
             currency.fromCurrency(); // returns 12345678.12
     ```
+=======
+# StringClass
+Checkpoint II
+>>>>>>> Stashed changes
 
