@@ -32,7 +32,7 @@ describe('Tests for StringClass Checkpoint', function() {
     });
     
     // toUpper() returns the string with all letters in Uppercase 
-    it('should return a String with all letters converted to UPPERCASE', function() { 
+    it('should return a String with letters in UPPERCASE', function() { 
       expect(typeof inUpper.toUpper()).toBe('string');
       expect(inLower.toUpper()).toEqual(inLower.toUpperCase());
       expect(inUpper.toUpper()).toEqual(inUpper);
@@ -48,7 +48,7 @@ describe('Tests for StringClass Checkpoint', function() {
     });
     
     // toLower() returns the string with all letters in Lowercase 
-    it('should return a string with all LETTERS converted to lowercase', function() {
+    it('should return a string with all LETTERS in lowercase', function() {
       expect(typeof inUpper.toLower()).toBe('string');
       expect(inUpper.toLower()).toEqual(inUpper.toLowerCase());
       expect(inLower.toLower()).toEqual(inLower);
@@ -93,15 +93,15 @@ describe('Tests for StringClass Checkpoint', function() {
     });
     
     // returns a list of the words in the string, as an Array
-    it('should return an array of all the words in the given string', function() {
+    it('should return an array of all the words in the string', function() {
       var _words = mixedString.words();
       expect(typeof _words).toBe('object');
       expect(Array.isArray(_words)).toBeTruthy();
       expect(_words.length).toEqual(13);
-      expect(_words).toEqual(['I', 'have', 'two', 'kids', 'home', 'that', 'are', 'thrilled', 
-        'coz', 'am', 'a', 'cool', 'dad']);
-      expect('Godson is a good boy @#$%#$^&% and he is black'.words()).toEqual(['Godson', 'is', 
-        'a', 'good', 'boy', 'and', 'he', 'is', 'black']);
+      expect(_words).toEqual(['I', 'have', 'two', 'kids', 'home', 'that', 
+        'are', 'thrilled', 'coz', 'am', 'a', 'cool', 'dad']);
+      expect('Godson is a good boy @#$%% and he is black'.words()).toEqual([
+        'Godson', 'is', 'a', 'good', 'boy', 'and', 'he', 'is', 'black']);
     });
   });
 

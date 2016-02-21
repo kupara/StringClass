@@ -37,7 +37,8 @@
   
   String.prototype.toCurrency = function() {
     var currencyExpression = /(\d)(?=(\d{3})+(?!\d))/g;
-    return Number(this.replace(/[^0-9\.]/g, '')).toFixed(2).replace(currencyExpression, '$1,');
+    return Number(this.replace(/[^0-9\.]/g, '')).toFixed(2)
+      .replace(currencyExpression, '$1,');
   };
 
   String.prototype.fromCurrency = function() {
