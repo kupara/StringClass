@@ -16,7 +16,7 @@ To run the tests, use the following steps:
  - Open the `index.html` file in your browser to see the tests run.
 
 
-# Methods Included
+# Methods Included in the Implementation
 
 This library consist of nine custom methods:
  - `hasVowels()`
